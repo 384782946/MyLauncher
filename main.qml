@@ -8,11 +8,18 @@ ApplicationWindow {
     width: 640
     height: 480
     title: qsTr("Hello World")
-    flags: Qt.FramelessWindowHint
+    //flags: Qt.FramelessWindowHint
 
     Image{
         anchors.fill: parent
         source: "qrc:/images/eMEvOt1ClEs.jpg"
+    }
+
+    TextEdit{
+        anchors{
+            top:parent.top
+            topMargin: 10
+        }
     }
 
     SwipeView {
@@ -26,11 +33,7 @@ ApplicationWindow {
         Page1 {
         }
 
-        Page {
-            Label {
-                text: qsTr("Second page")
-                anchors.centerIn: parent
-            }
+        Page1 {
         }
     }
 
