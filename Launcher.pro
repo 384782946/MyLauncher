@@ -4,7 +4,9 @@ CONFIG += c++11
 
 SOURCES += main.cpp \
     actioncontroller.cpp \
-    launchermodel.cpp
+    launchermodel.cpp \
+    proxymodel.cpp \
+    application.cpp
 
 RESOURCES += qml.qrc
 
@@ -32,4 +34,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 HEADERS += \
     actioncontroller.h \
-    launchermodel.h
+    launchermodel.h \
+    proxymodel.h \
+    application.h
